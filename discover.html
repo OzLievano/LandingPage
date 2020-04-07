@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Landing Page</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" />
+</head>
+
+<body>
+    <div id="modalOne" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <div class="col-md-8">
+                    <p>
+                        <video height="240px" width="350px" controls>
+                            <source src="videos/video1.webm" type="video/webm">
+                        </video>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p>Like, Comment, Follow! </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modalTwo" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <div class="col-md-8">
+                    <p>
+                        <video height="240px" width="350px" controls>
+                            <source src="videos/video2.webm" type="video/webm">
+                        </video>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p>Like, Comment, Follow! </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="modalThree" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <div class="col-md-8">
+                    <p>
+                        <video height="240px" width="350px" controls>
+                            <source src="videos/video3.webm" type="video/webm">
+                        </video>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p>Like, Comment, Follow! </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="box"><strong><p><a href="#default" class="logo">ClipIT</p></a></strong></div>
+        <div class="box">
+            <div class="navbar">
+                <a href="index.html">Trending</a>
+                <a href="discover.html">Discover</a>
+                <a href="signup.html">Sign-up</a>
+                <a href="login.html">Login</a>
+            </div>
+
+        </div>
+        <h1> Clips of The Day </h1>
+
+        <div class="clips">
+
+            <div class="video1">
+                <h2><button class="button" data-modal="modalOne">Pentakill</button></h2>
+                <video height="240px" width="350px" controls>
+                    <source src="videos/video1.webm" type="video/webm">
+                </video>
+            </div>
+            <div class="video2">
+                <h2><button class="button" data-modal="modalTwo">TripleKill</button></h2>
+                <video height="240px" width="350px" controls>
+                    <source src="videos/video2.webm" type="video/webm">
+                </video>
+            </div>
+            <div class="video3">
+                <h2><button class="button" data-modal="modalThree">Minion Assist</button></h2>
+                <video height="240px" width="350px" controls>
+                    <source src="videos/video3.webm" type="video/webm">
+                </video>
+            </div>
+
+        </div>
+        <div class="box"></div>
+        <div class="container">
+            <form action="/action_page.php">
+                <div class="row">
+                    <h2 style="text-align:center"> Login With Social Media or Manually </h2>
+                    <div class="v1">
+                        <span class="v1-innertext"> <h3 style="text-align:center"> Or </h3></span>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="fb btn">
+                            <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+                        </a>
+                        <a href="#" class="twitter btn">
+                            <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+                        </a>
+                        <a href="#" class="google btn">
+                            <i class="fa fa-google fa-fw"></i> Login with Google+
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <div class="hide-md-lg">
+                            <p>Or Sign in manually:</p>
+                        </div>
+
+                        <input type="text" name="username" placeholder="Username" required>
+                        <input type="text" name="password" placeholder="Password" required>
+                        <input type="submit" value="Login">
+                    </div>
+            </form>
+            </div>
+
+            <div class="bottom-container">
+                <div class="row">
+                    <div class="col">
+                        <a href="#" style="color:black" class="btn">Sign up</a>
+                    </div>
+                    <div class="col">
+                        <a href="#" style="color:black" class="btn">Forgot password?</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

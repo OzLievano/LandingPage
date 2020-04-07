@@ -1,0 +1,218 @@
+.wrapper{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(3,1fr));
+  width:100%;
+}
+.wrapper {
+  border: 2px solid black;
+  border-radius: 5px;
+  grid-template-columns: repeat(auto-fit,minmax(3,1fr));
+  background-color: white;
+  overflow:auto;
+}
+p{
+  font-size: 20px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.clips{
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(3,1fr));
+  grid-template-rows:auto;
+  grid-template-areas:
+  " video1 video2 video3";
+  width:auto;
+  overflow:auto;
+}
+/* set fluid width to videos */
+video {
+  width: 100%;
+}
+.navbar{
+  width: 100%;
+  background-color: #555;
+  overflow:auto;
+}
+
+.navbar a{
+  float:left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 20%;
+  text-align: center;
+}
+
+.navbar a.active{
+  background-color: #4CAF50;
+}
+
+@media screen and (max-width: 500px){
+  .navbar a{
+    float:none;
+    display:block;
+    width: 100%;
+    text-align: left;
+  }
+}
+/* sign up style */
+*{
+  box-sizing:border-box;
+}
+
+.container{
+  position:relative;
+  border-radius:5px;
+  background-color:#f2f2f2;
+  padding: 20px 0 30px 0;
+}
+
+input,
+.btn{
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius:4px;
+  margin:5px  0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size:17px;
+  line-height: 20px;
+  text-decoration:none;
+}
+
+input:hover,
+.btn:hover{
+  opacity:1;
+}
+
+.fb{
+  background-color:#3b5998;
+  color:white;
+}
+
+.twitter{
+  background-color:#55ACEE;
+  color:white;
+}
+
+.google{
+  background-color:#dd4b39;
+  color:white;
+}
+
+input[type=submit]{
+  background-color:#4CAF50;
+  color:white;
+  cursor:pointer;
+}
+
+input[type=submit]:hover{
+  background-color:#45a049;
+}
+
+.col{
+  float:left;
+  width:50%;
+  margin:auto;
+  padding: 0 50px;
+  margin-top:6px;
+  color: black;
+}
+
+.row:after{
+  content:"":
+  display:table;
+  clear:both;
+}
+
+.v1{
+  position:absolute;
+  left:50%;
+  transform:translate(-50%);
+  border:2px solid #ddd;
+  height: 175px;
+}
+
+.inner{
+  position:absolute;
+  top:50%;
+  transform:translate(-50%,-50%);
+  background-color: #f1f1f1;
+  border:1px solid #ccc;
+  border-radius: 50%;
+  padding: 8px 10px;
+}
+
+.hide-md-lg{
+  display:none;
+}
+
+.bottom-container{
+  text-align:center;
+  background-color:#666;
+  border-radius: 0px 0px 4px 4px;
+}
+
+@media screen and (max-width:650px){
+  .col{
+    width: 100%;
+    margin-top:0;
+  }
+  .v1{
+    display:none;
+  }
+  .hide-md-lg{
+    display:block;
+    text-align: center;
+  }
+}
+
+/* The Modal (background) */
+.modal{
+  display:none;
+  position:fixed;
+  z-index:1;
+  padding-top:100px;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  overflow:auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content{
+  background-color: #fefefe;
+  margin:auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close{
+  color: #aaaaaa;
+  float:right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus{
+  color:#000 ;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* create a modal grid  */
+
+.modal-body{
+  display:grid;
+  grid-template-columns:  1fr 1fr;
+}
